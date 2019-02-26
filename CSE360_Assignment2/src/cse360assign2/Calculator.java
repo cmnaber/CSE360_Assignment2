@@ -5,6 +5,7 @@
  * 
  * @author  Christopher Naber
  * @class  CSE360
+ * @Class_ID 501
  */
 
 package cse360assign2;
@@ -18,6 +19,7 @@ public class Calculator {
 	 */	
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
+		
 	}
 	
 	/**
@@ -25,7 +27,7 @@ public class Calculator {
 	 * @return
 	 */	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/**
@@ -33,7 +35,7 @@ public class Calculator {
 	 * @param value
 	 */	
 	public void add (int value) {
-		total = total + value;
+		total = total + value;		
 	}
 	
 	/**
@@ -66,7 +68,7 @@ public class Calculator {
 	}
 	
 	/**
-	 * This prints out the history of the input.
+	 * This immediately returns history of the input.
 	 * @return
 	 */	
 	public String getHistory () {
